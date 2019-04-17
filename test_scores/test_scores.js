@@ -12,7 +12,7 @@ var addElement = function () {
 	// get user entries
 	var name = $("name").value; //local
     var score  = parseInt( $("score").value );
-    
+
     // check entries for validity
     if (name == "" || isNaN(score) || score < 0 || score > 100) {
     	alert("You must enter a name and a valid score");
@@ -46,6 +46,7 @@ var determineBest=function(){
 };
 
 var listData=function(){
+  var text = "";
 	for(let i=0;i<names.length;i++){
 		text+=names[i]+", "+scores[i]+"\n";
 
